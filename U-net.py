@@ -1,7 +1,9 @@
 import torch
 import torch.nn as nn
 import torchvision
+from torchsummary import summary
 import torchvision.transforms.functional as TF
+
 
 class DoubleConv(nn.Module):
     def __init__(self,in_channels :int ,out_channels :int):
@@ -69,6 +71,8 @@ def test():
     preds = model(x)
     print(preds.shape)
     print(x.shape)
+    # Example
+    summary(model,(1,572,572))
 
 if __name__ == "__main__":
          test()
