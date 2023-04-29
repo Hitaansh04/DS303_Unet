@@ -10,12 +10,15 @@ Next, is the script Carvana.py which contains the class of the dataset that we a
 The utils.py contains all the utilities that we shall be accessing throughout the project, that includes saving and loading the checkpoints,
 creating dataloaders for training and validation data and masks. The validation data is a subset of training data that is used to measure the model accuracy during training. It also contains the functions for checking accuracy and to save_predictions as images. 
 
-Lastly , the train.py script is where the magic happens. We include basic transformations before we can put the image as an input tensor to the model.
+Lastly , the train.py script is where the magic happens. We include basic transformations before we can put the image as an input tensor to the model. The accuracy metric that was used is dice score which is a standard practice in segmentation of images.
 
 ## Possible Additions / Improvements : 
 These changes could improve the implementations had we got more time.
 1. During training , we could add optional parser arguements for hyperparameters such as epochs, learning rate , batch size . 
-2. Write a script to predict 
+2. Write a script to predict segmentation images . 
+
+## Architecture
+
 
 
 The model was trained for nearly 5 hours and here is the accuracy and dice score of our model.
