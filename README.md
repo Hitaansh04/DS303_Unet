@@ -16,3 +16,8 @@ Lastly , the train.py script is where the magic happens. We include basic transf
 These changes could improve the implementations had we got more time.
 1. During training , we could add optional parser arguements for hyperparameters such as epochs, learning rate , batch size . 
 2. Write a script to predict 
+
+
+The model was trained for nearly 5 hours and here is the accuracy and dice score of our model.
+
+![Screenshot 2023-04-29 at 11 44 32 AM](https://user-images.githubusercontent.com/63915396/235287339-b5d0c6ff-2a0a-4ea0-bc0f-c420856dd8e5.png)
